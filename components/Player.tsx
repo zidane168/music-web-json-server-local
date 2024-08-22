@@ -19,7 +19,7 @@ export default function Player() {
                     </div>
                     
                 </div>
-                <div className="w-full"> 
+                <div className="w-full xl:flex-grow"> 
                     <AudioPlayer 
                         loop 
                         preload='none'

@@ -22,8 +22,8 @@ const locationSequence = [
 
 const Hero = () => {
     return (
-        <section className='h-[80vh] xl:h-[850px]' id='home'> 
-            <div className='container relative flex items-center h-full mx-auto '> 
+        <section className='h-[80vh] xl:h-[850px] xl:w-full mx-auto flex' id='home'> 
+            <div className='relative flex items-center h-full mx-auto xl:container '> 
                 <div className='z-0 flex flex-col justify-center h-full pt-12'> 
                     <MouseParallaxContainer globalFactorX={ 0.1 } globalFactorY={ 0.2 } resetOnLeave className='relative flex items-center h-[120px] xl:h-max xl:w-[840px]' > 
 
@@ -61,7 +61,7 @@ const Hero = () => {
                         </MouseParallaxChild>
 
 
-                        <MouseParallaxChild factorX={ 0.4 } factorY={ 0.7 } className='absolute right-0 z-30 opacity-80'>
+                        <MouseParallaxChild factorX={ 0.4 } factorY={ 0.7 } className='absolute right-[-29px] xl:right-[0px] z-30 opacity-80'>
                             <motion.div 
                             
                                 variants={fadeIn('left', 0.6)}

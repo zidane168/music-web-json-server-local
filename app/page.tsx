@@ -9,7 +9,7 @@ import Player from "@/components/Player";
  
 export default function Home() {
   return (
-    <main>   
+    <main className="w-full mx-auto">   
 
       <Hero/>
       <Player />
