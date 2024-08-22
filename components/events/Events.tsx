@@ -2,7 +2,8 @@ import SectionHeader from "../SectionHeader";
 import EventBox from "./EventBox";
 
 const getEvents = async() => {
-    const res = await fetch('http://localhost:4001/events');
+    const apiURL = process.env.API_URL
+    const res = await fetch(apiURL + 'events');
     console.log(res)
     return res.json();
 }

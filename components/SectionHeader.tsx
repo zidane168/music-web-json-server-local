@@ -11,7 +11,7 @@ const SectionHeader = ({ preTitle, title} : ISectionHeader) => {
     return (
         <header>
             <motion.h3 
-                variants={fadeIn('up', 0.4)}
+                variants={fadeIn('up', 0.2)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once:false, amount: 0.3 }}

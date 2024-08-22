@@ -9,6 +9,7 @@ import { Alex_Brush, Montserrat } from 'next/font/google'
 // components
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
 
 const alexBrush = Alex_Brush({ 
   weight: ['400'],
@@ -52,8 +53,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <Header />
+          <div className="relative flex flex-col h-screen">  
             <main className="container flex-grow px-6 pt-16 mx-auto max-w-7xl">
               {children}
             </main>
