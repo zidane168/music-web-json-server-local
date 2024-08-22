@@ -4,6 +4,8 @@ import Image from "next/image";
 // icons
 import { RiMapPin2Fill } from 'react-icons/ri'
 import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
+
 // "id": 1,
 //             "date" : {
 //                 "day": "15",
@@ -14,8 +16,7 @@ import { motion } from 'framer-motion'
 //                 "country": "China",
 //                 "address": "Tian round road"
 //             },
-//             "priceRange": "10-29$"
-
+//             "priceRange": "10-29$" 
 
 interface IDate {
     day: string
@@ -35,11 +36,15 @@ interface IEvent {
     priceRange: string
 }
 
-const EventBox = ({events} : {events: IEvent[]} ) => {
-
-    console.log(events)
+const EventBox = ({events} : {events: IEvent[]} ) => { 
+    
     return (
-        <div className="bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative"> 
+        <motion.div
+            variants={ fadeIn('up', 0.2) }
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className="bg-secondary/60 rounded-[10px] p-4 xl:p-12 relative"> 
             <div className="flex flex-col xl:flex-row justify-between h-[620px] xl:h-full gap-x-4">
                 <div className="hidden xl:flex w-[400px]">
                     <Image src={'/assets/events/singer.jpg'} alt={'singer'} width={350} height={300} priority quality={100}/>
@@ -74,7 +79,7 @@ const EventBox = ({events} : {events: IEvent[]} ) => {
                     }
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

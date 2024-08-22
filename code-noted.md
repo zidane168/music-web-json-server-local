@@ -47,3 +47,17 @@ await app.listen(port);
 
 # import { RiMapPin2Fill } from 'react-icons/ri'
 for icons use
+
+
+# using motion
+
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants'
+
+src/variants.js
+
+ <motion.div
+            variants={ fadeIn('up', 0.2) }
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
