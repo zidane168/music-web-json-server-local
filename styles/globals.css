@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-white bg-primary font-montserrat;
+}
+
+.pretitle {
+    @apply font-alexBrush text-[42px] text-accent-default leading-none;
+}
+
+.h2 {
+    @apply text-[32px] xl:text-[38px] font-semibold leading-tight;
+}
+
+.btn {
+    @apply flex items-center justify-center w-full font-medium transition-all rounded-full cursor-pointer;
+}
+
+.btn-sm {
+    @apply w-[146px] h-[50px];
+}
+
+.btn-lg {
+    @apply w-[160px] h-[54px];
+}
+
+.btn-accent {
+    @apply text-white bg-accent-default hover:bg-accent-hover;
+}
+
+.btn-white {
+    @apply bg-white text-primary hover:bg-white/80;
+}
+
+.section {
+    @apply py-12 xl:py-24;
+}

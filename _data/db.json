@@ -1,0 +1,161 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "date" : {
+                "day": "15",
+                "month": "Sep"
+            },
+            "location": {
+                "city": "ShangHai",
+                "country": "China",
+                "address": "Tian round road"
+            },
+            "priceRange": "10-29$"
+        },
+        {
+            "id": 2,
+            "date" : {
+                "day": "16",
+                "month": "Sep"
+            },
+            "location": {
+                "city": "ShangHai",
+                "country": "China",
+                "address": "Tian round road"
+            },
+            "priceRange": "30-39$"
+        },
+        {
+            "id": 3,
+            "date" : {
+                "day": "17",
+                "month": "Sep"
+            },
+            "location": {
+                "city": "ShangHai",
+                "country": "China",
+                "address": "Tian round road"
+            },
+            "priceRange": "30-39$"
+        },
+        {
+            "id": 4,
+            "date" : {
+                "day": "18",
+                "month": "Sep"
+            },
+            "location": {
+                "city": "ShangHai",
+                "country": "China",
+                "address": "Tian round road"
+            },
+            "priceRange": "10-29$"
+        },
+        {
+            "id": 5,
+            "date" : {
+                "day": "19",
+                "month": "Sep"
+            },
+            "location": {
+                "city": "ShangHai",
+                "country": "China",
+                "address": "Tian round road"
+            },
+            "priceRange": "30-39$"
+        },
+        {
+            "id": 6,
+            "date" : {
+                "day": "20",
+                "month": "Sep"
+            },
+            "location": {
+                "city": "ShangHai",
+                "country": "China",
+                "address": "Tian round road"
+            },
+            "priceRange": "30-39$"
+        }
+    ],
+    "albums": [
+        {
+            "id": 1,
+            "img": "/assets/albums/cover/cover-1.jpg",
+            "name": "album 1",
+            "tracks": [
+                {
+                    "name": "Yi Ge Ren 一個人 [Seorang Diri]",
+                    "src": "assets/yi-ge-ren.mp3"
+                },
+                {
+                    "name": "你會愛我到那個時候",
+                    "src": "assets/ni-hui-ai-wo-dao-na-ge-shi-hou.mp3"
+                },
+                {
+                    "name": "緣生意轉",
+                    "src": "assets/yuang-sheng-yi-zhuan.mp3"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "img": "/assets/albums/cover/cover-2.jpg",
+            "name": "album 2",
+            "tracks": [
+                {
+                    "name": "Yi Ge Ren 一個人 [Seorang Diri]",
+                    "src": "assets/yi-ge-ren.mp3"
+                },
+                {
+                    "name": "你會愛我到那個時候",
+                    "src": "assets/ni-hui-ai-wo-dao-na-ge-shi-hou.mp3"
+                },
+                {
+                    "name": "緣生意轉",
+                    "src": "assets/yuang-sheng-yi-zhuan.mp3"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "img": "/assets/albums/cover/cover-3.jpg",
+            "name": "album 3",
+            "tracks": [
+                {
+                    "name": "Yi Ge Ren 一個人 [Seorang Diri]",
+                    "src": "assets/yi-ge-ren.mp3"
+                },
+                {
+                    "name": "你會愛我到那個時候",
+                    "src": "assets/ni-hui-ai-wo-dao-na-ge-shi-hou.mp3"
+                },
+                {
+                    "name": "緣生意轉",
+                    "src": "assets/yuang-sheng-yi-zhuan.mp3"
+                }
+            ]
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "date": "2024-09-16",
+            "title": "Rock Concert at Central Park",
+            "description": "Join us for an electrifying night of classic rock hits at Central Park!"
+        },
+        {
+            "id": 2,
+            "date": "2024-09-17",
+            "title": "Antstrical Coffee",
+            "description": "Join us for an electrifying night of classic rock hits at Central Park!"
+        },
+        {
+            "id": 3,
+            "date": "2024-09-18",
+            "title": "Classcial Symphony Showcase",
+            "description": "Join us for an electrifying night of classic rock hits at Central Park!"
+        } 
+    ]
+}
