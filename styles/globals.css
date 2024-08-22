@@ -7,7 +7,7 @@ body {
 }
 
 .pretitle {
-    @apply font-alexBrush text-[42px] text-accent-default leading-none;
+    @apply font-alexBrush text-[42px] text-purple-200 leading-none;
 }
 
 .h2 {
