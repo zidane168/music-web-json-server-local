@@ -37,3 +37,57 @@ body {
 .section {
     @apply py-12 xl:py-24;
 }
+
+.rap-process {
+    @apply !bg-[#d2c1e9];
+}
+
+.rap-pin {
+    @apply !bg-white;
+}
+
+.rap-container .rap-slider .rap-process .rap-pin {
+    @apply !w-[14px] !h-[14px] !bg-white;
+}
+
+.rap-container .rap-slider .rap-process .rap-pin:hover {
+    @apply scale-[1.2] transition-all duration-300
+}
+
+.rap-container {
+    @apply !p-0;
+}
+
+.rap-container .rap-pp-button svg {
+    @apply w-[14px]
+}
+
+.rap-container .rap-volume .rap-volumn-btn svg {
+    @apply-[22px];
+}
+
+.rap-container .rap-pp-button svg path, 
+.rap-container .rap-volume .rap-volumn-btn svg path {
+    @apply  text-white;
+}
+
+.rap-current-time, .rap-total-time {
+    @apply font-montserrat text-[13px] font-medium text-white;
+}
+ 
+
+.rap-container .rap-slider {
+    @apply !bg-[#a7a7c6] !h-[2px];
+}
+
+.rap-container .rap-controls span {
+    @apply text-[15px]
+}
+
+.rap-volumn .rap-volume-btn svg path {
+    @apply fill-white;
+}
+
+.rap-volumn-controller { 
+    @apply !bg-primary/10;
+}

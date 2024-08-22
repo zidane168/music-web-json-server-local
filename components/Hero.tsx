@@ -24,7 +24,7 @@ const Hero = () => {
     return (
         <section className='h-[80vh] xl:h-[850px]' id='home'> 
             <div className='container relative flex items-center h-full mx-auto '> 
-                <div className='z-20 flex flex-col justify-center h-full pt-12'> 
+                <div className='z-0 flex flex-col justify-center h-full pt-12'> 
                     <MouseParallaxContainer globalFactorX={ 0.1 } globalFactorY={ 0.2 } resetOnLeave className='relative flex items-center h-[120px] xl:h-max xl:w-[840px]' > 
 
                         <MouseParallaxChild factorX={ 0.2 } factorY={ 0.4 } className='relative opacity-80'>
@@ -105,14 +105,13 @@ const Hero = () => {
                 </div>
  
                 <MouseParallaxChild factorX={ 0.4 } factorY={ 0.7 } 
-                    className='absolute top-0 right-0 hidden xl:flex'>
-                    <motion.div 
-                    
+                    className='absolute top-0 right-0 z-0 hidden xl:flex'>
+                    <motion.div  
                         variants={fadeIn('left', 0.6)}
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{ once: false, amount: 0.3 }}
-                        className='w-[784px] h-[893px] absolute -right-[190px]'>
+                        className='w-[734px] h-[893px] absolute -right-[190px]'>
                         <Image 
                             src={'/assets/albums/hero/singer.png'}
                             fill

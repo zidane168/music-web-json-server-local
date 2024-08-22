@@ -46,7 +46,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased overflow-x-hidden relative",
+          "min-h-screen bg-pink-900/40 font-sans antialiased overflow-x-hidden relative",
           alexBrush.variable,
           montserrat.variable,
           
