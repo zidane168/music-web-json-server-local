@@ -36,7 +36,7 @@ export interface IEvent {
     priceRange: string
 }
 
-const EventBox = ({events} : {events: IEvent[]} ) => { 
+const EventBox = ({events} : {events: Promise<IEvent[]>} ) => { 
     
     return (
         <motion.div

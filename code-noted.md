@@ -42,12 +42,16 @@ import { ConfigModule } from '@nestjs/config';
 })
 
 -----> how to use
+oh man if call on server side it must be below
 const port = process.env.PORT || 3001
 await app.listen(port);
 
 ON Nextjs, create env.local
 API_URL='http://localhost:4001/'
 when use; 
+
+if call on client side should create (NEXT_PUBLIC_API_URL) and 'use client'; 
+NEXT_PUBLIC_API_URL='http://localhost:4001/'
 
 
 # import { RiMapPin2Fill } from 'react-icons/ri'
@@ -94,3 +98,37 @@ links.map((link, index) => {
                   { link.name } 
                   </Link>)
 
+
+# dung server side rendering
+ 
+import SectionHeader from "../SectionHeader";
+import EventBox from "./EventBox"; 
+  
+
+async function fetchData(){ 
+
+    const apiURL = process.env.API_URL
+    console.log(' ------------------  ------------------')
+    console.log('apiURL: ', apiURL)
+    console.log(' ------------------  ------------------') 
+    
+    const res = await fetch(apiURL + 'events');
+    return res.json();
+    // setEvents(res.json())
+} 
+
+export default async function Events() {  
+    
+    const events: any  = await fetchData();
+  
+    return (
+        <section className="section" id="tours">
+            <div className="container mx-auto">
+                <SectionHeader preTitle={'World Tour'} title='Upcoming' />
+                <EventBox events={ events} />
+            </div> 
+        </section>
+    )
+}
+
+ 

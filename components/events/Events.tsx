@@ -1,28 +1,23 @@
-'use client'
-import { useEffect, useState } from "react";
+// 'use client' 
 import SectionHeader from "../SectionHeader";
-import EventBox, { IEvent } from "./EventBox"; 
+import EventBox from "./EventBox"; 
   
-export default function Events() {
 
-    const [ events, setEvents ] = useState<IEvent[]>([]); 
-    async function getEvents(): Promise<IEvent[]> { 
-        const apiURL = process.env.API_URL
+async function fetchData(){ 
 
-        console.log('apiURL: ', apiURL)
-        const res = await fetch(apiURL + 'events');
-        // console.log(res)
-        return res.json();
-        
-    } 
+    const apiURL = process.env.API_URL
+    console.log(' ------------------  ------------------')
+    console.log('apiURL: ', apiURL)
+    console.log(' ------------------  ------------------') 
+    
+    const res = await fetch(apiURL + 'events');
+    return res.json();
+    // setEvents(res.json())
+} 
 
-    useEffect(() => { 
-        getEvents().then(events => {
-            console.log(events)
-            setEvents(events)
-        })
-    }, [])
-
+export default async function Events() {  
+    
+    const events: any  = await fetchData();
   
     return (
         <section className="section" id="tours">

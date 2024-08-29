@@ -6,10 +6,8 @@ import { Providers } from "./providers";
 
 import { Alex_Brush, Montserrat } from 'next/font/google'
 
-// components
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+// components 
+import Footer from "@/components/Footer"; 
 
 const alexBrush = Alex_Brush({ 
   weight: ['400'],

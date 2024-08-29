@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
       <Hero/>
       <Player />
-      <Events /> 
+      <Events />
      
       <div className="h-[4000px]">  </div>
     </main> 
