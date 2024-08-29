@@ -29,7 +29,7 @@ interface ILocation {
     address: string
 }    
 
-interface IEvent {
+export interface IEvent {
     id: string,
     date: IDate,
     location: ILocation,

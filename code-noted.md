@@ -77,4 +77,20 @@ import { TypeAnimation } from 'react-type-animation';
 </div>
 
 
+# --------------
+get class active when click inside links (có thể truyền biến active khi bấm vào links)
+import { Link } from "react-scroll"
+
+links.map((link, index) => {
+              return ( <Link 
+                  to={`${link.path}`}
+                  key={ index }  
+                  className={`${linkStyles} cursor-pointer border-b-2 border-transparent`}   
+                  smooth
+                  spy
+                  offset={-50}
+                  activeClass='active'
+              > 
+                  { link.name } 
+                  </Link>)
 

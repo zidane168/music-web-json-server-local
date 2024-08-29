@@ -91,3 +91,7 @@ body {
 .rap-volumn-controller { 
     @apply !bg-primary/10;
 }
+
+.active {
+    @apply border-b-2 border-accent-default;
+}

@@ -24,7 +24,7 @@ const Hero = () => {
     return (
         <section className='h-[80vh] xl:h-[850px] xl:w-full mx-auto flex' id='home'> 
             <div className='relative flex items-center h-full mx-auto xl:container '> 
-                <div className='z-0 flex flex-col justify-center h-full pt-12'> 
+                <div className='z-0 flex flex-col justify-center h-full pt-12' id='home'> 
                     <MouseParallaxContainer globalFactorX={ 0.1 } globalFactorY={ 0.2 } resetOnLeave className='relative flex items-center h-[120px] xl:h-max xl:w-[840px]' > 
 
                         <MouseParallaxChild factorX={ 0.2 } factorY={ 0.4 } className='relative opacity-80'>
@@ -68,7 +68,7 @@ const Hero = () => {
                                 initial="hidden"
                                 whileInView={'show'}
                                 viewport={{ once: false, amount: 0.3 }}
-                                className='w-[100px] h-[122px] xl:w-[225px] xl:h-[205px] relative -left-[40px]'>
+                                className='w-[100px] h-[122px] xl:w-[225px] xl:h-[205px] relative -left-[40px] mix-blend-luminosity'>
                                 <Image 
                                     src={'/assets/albums/hero/bird.png'}
                                     fill
@@ -78,6 +78,10 @@ const Hero = () => {
                             </motion.div>
                         </MouseParallaxChild>
                     </MouseParallaxContainer> 
+
+                    <div></div>
+
+                    
 
                     <motion.div 
                         variants={ fadeIn('up', 0.4) }
