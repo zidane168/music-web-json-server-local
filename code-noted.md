@@ -132,3 +132,39 @@ export default async function Events() {
 }
 
  
+# yarn install typescript@latest @types/react@latest
+yarn add typescript@latest @types/react@latest
+
+nếu dùng version TypeScript thấp hơn 5.1.3 thì khi khai báo nhu the này
+for fix below issue
+Its return type 'Promise<Element>' is not a valid JSX element.
+Type 'Promise<Element>' is missing the following properties from type 'ReactElement<any, any>': type, props, key ts(2786)
+
+
+
+import EventBox from "@/components/events/EventBox";
+import SectionHeader from "@/components/SectionHeader"; 
+import type { GetServerSideProps } from "next";
+
+export default async function Events() {    // dùng async function để goi server side rendering
+
+    const apiURL = process.env.API_URL;
+    const response =  await fetch(`${apiURL}events`);
+    const events =   await response.json();
+      
+    return ( 
+        <section className="section" id="tours">
+            <div className="container mx-auto">
+                <SectionHeader preTitle={'World Tour'} title='Upcoming' />
+                <EventBox events={events} />
+            </div> 
+        </section> 
+    );
+};
+
+--------------------------------------------------------------------------------
+To use an async Server Component with TypeScript, ensure you are using TypeScript 5.1.3 or higher and @types/react 18.2.8 or higher
+
+# nếu dùng cấu trúc app/ thì ko có thể dùng dc getServerPropSides, vì nó chỉ có thể dùng cho cấu trúc pages/ (áp dụng từ next 14 trở đi)
+
+https://stackoverflow.com/questions/76725399/nextjs-how-to-fix-getserversideprops-is-not-supported-in-app

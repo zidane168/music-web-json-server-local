@@ -36,7 +36,7 @@ export interface IEvent {
     priceRange: string
 }
 
-const EventBox = ({events} : {events: Promise<IEvent[]>} ) => { 
+const EventBox = ({events} : {events: IEvent[]} ) => { 
     
     return (
         <motion.div
@@ -51,7 +51,7 @@ const EventBox = ({events} : {events: Promise<IEvent[]>} ) => {
                 </div>
                 <div className="flex-1 bg-purple-400/10 h-[500px] flex flex-col justify-between overflow-y-scroll scrollbar-thin scrollbar-thumb-purple-300 scrollbar-track-white/10 xl:pr-6"> 
                     { 
-                        events.map( (event: IEvent) => {
+                        events && events.map( (event: IEvent) => {
                             return (
                                 <div key={event.id} className="flex flex-col items-center justify-between p-4 pb-10 my-4 text-center border-b last-of-type:border-none xl:pt-3 xl:pb-3 xl:flex-row border-white/10 gap-y-4 bg-pink-400/10 xl:gap-y-0 xl:text-left xl:my-0"> 
                                     <div  className='flex flex-col xl:flex-row'>

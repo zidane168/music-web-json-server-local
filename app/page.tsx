@@ -1,8 +1,7 @@
- 
-import Events from "@/components/events/Events";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Player from "@/components/Player";
+import Player from "@/components/Player";  
+import Events from "./events/page";
  
 export default function Home() {
   return (
@@ -11,9 +10,10 @@ export default function Home() {
       <Header />
       <Hero/>
       <Player />
-      <Events />
+      <Events  />
      
       <div className="h-[4000px]">  </div>
     </main> 
   )
 }
+
